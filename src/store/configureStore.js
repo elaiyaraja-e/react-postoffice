@@ -14,18 +14,13 @@
  * 
  */
 
-body {
-  font-family: sans-serif;
-}
+//Library Files
+import { createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
+//Redux Reducer File
+import rootReducer from '../redux/reducers/rootReducer';
 
-a {
-  color: black;
-}
-
-.ui.table thead th {
- color: steelblue
-}
-
-.ui.table thead tr, .ui.inverted.table th {
-  text-align: center;
- }
+const configureStore = () => {
+    return createStore(rootReducer, applyMiddleware(thunk));
+};
+export default configureStore;

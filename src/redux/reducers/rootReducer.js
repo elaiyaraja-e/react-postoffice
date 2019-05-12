@@ -14,18 +14,13 @@
  * 
  */
 
-body {
-  font-family: sans-serif;
-}
+//Library Files
+import {combineReducers} from 'redux';
+//Redux Reducers File
+import postViewReducer from './postViewReducer';
+import postReducer from './postReducer';
 
-a {
-  color: black;
-}
-
-.ui.table thead th {
- color: steelblue
-}
-
-.ui.table thead tr, .ui.inverted.table th {
-  text-align: center;
- }
+export default combineReducers ({
+    postViewReducer,
+    postReducer
+});

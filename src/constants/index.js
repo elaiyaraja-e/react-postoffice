@@ -14,18 +14,5 @@
  * 
  */
 
-body {
-  font-family: sans-serif;
-}
-
-a {
-  color: black;
-}
-
-.ui.table thead th {
- color: steelblue
-}
-
-.ui.table thead tr, .ui.inverted.table th {
-  text-align: center;
- }
+export const POST_VIEW_URL =  "https://jsonplaceholder.typicode.com/posts";
+export const POST_URL = postId => `https://jsonplaceholder.typicode.com/posts/${postId}`;

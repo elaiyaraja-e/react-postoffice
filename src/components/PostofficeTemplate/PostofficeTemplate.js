@@ -14,18 +14,15 @@
  * 
  */
 
-body {
-  font-family: sans-serif;
-}
+//Library Files
+import React, { Component } from 'react'
 
-a {
-  color: black;
+export default class PostofficeTemplate extends Component {
+  render = () =>{
+    return (
+      <div class="ui justified container">
+        {this.props.children}
+      </div>
+    )
+  }
 }
-
-.ui.table thead th {
- color: steelblue
-}
-
-.ui.table thead tr, .ui.inverted.table th {
-  text-align: center;
- }

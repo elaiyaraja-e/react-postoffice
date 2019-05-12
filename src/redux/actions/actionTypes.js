@@ -14,18 +14,15 @@
  * 
  */
 
-body {
-  font-family: sans-serif;
-}
 
-a {
-  color: black;
-}
+export const POST_VIEW_STATUS = {
+    REQUEST: 'GET_POST_VIEW_REQUEST',
+    SUCCESS: 'GET_POST_VIEW_SUCCESS',
+    ERROR: 'GET_POST_VIEW_ERROR'
+};
 
-.ui.table thead th {
- color: steelblue
+export const POST_STATUS = {
+    REQUEST: 'GET_POST_REQUEST',
+    SUCCESS: 'GET_POST_SUCCESS',
+    ERROR: 'GET_POST_ERROR'
 }
-
-.ui.table thead tr, .ui.inverted.table th {
-  text-align: center;
- }
